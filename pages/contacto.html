@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Descubre Cuenca | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Contacta con Descubre Cuenca</h1>
+    </header>
+    <div class="distribucion">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="patrimonio.html">Patrimonio</a></li>
+                <li><a href="naturaleza.html">Naturaleza</a></li>
+                <li><a href="gastronomia.html">Gastronomía</a></li>
+                <li><a href="itinerario.html">Itinerario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <form class="formulario" action="../php/guardar.php" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="100" required>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" maxlength="150" required>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" maxlength="150" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" maxlength="2000" rows="6" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Liz Zuin. Todos los derechos reservados.<br>
+            <a href="mailto:lizzuin40@gmail.com">Escríbeme</a>
+    </footer>
+</body>
+
+</html>

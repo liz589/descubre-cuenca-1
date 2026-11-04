@@ -1,0 +1,206 @@
+/* Base y tipografía */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #26352f;
+    background: #f3f5ef;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+h2 {
+    color: #254f41;
+}
+
+/* Cabecera y pie */
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background: #254f41;
+}
+
+#cabecera {
+    border-bottom: 4px solid #dcb66b;
+}
+
+footer a {
+    color: white;
+}
+
+/* Menú y contenido */
+.distribucion {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    gap: 1rem;
+    width: min(1100px, 94%);
+    margin: 1rem auto;
+}
+
+nav {
+    flex: 0 0 190px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #b5c9bf;
+    background: #e2eee6;
+    color: #173d30;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #c2ddce;
+}
+
+nav a:active {
+    background: #254f41;
+    color: white;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+    padding: 1.25rem;
+    border: 1px solid #d1dcd5;
+    background: white;
+}
+
+/* Fotografías, tarjetas y listas */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tarjeta {
+    flex: 1 1 250px;
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #d1dcd5;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+img, video, iframe {
+    display: block;
+    max-width: 100%;
+}
+
+img, video {
+    height: auto;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ol {
+    list-style-type: decimal-leading-zero;
+}
+
+/* Tablas y formulario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-wrap: anywhere;
+}
+
+th, td {
+    border: 1px solid #b5c9bf;
+    padding: 0.6rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #254f41;
+    color: white;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #b5c9bf;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 0.6rem;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    padding: 0.55rem;
+    border: 1px solid #7e9b8d;
+    font: inherit;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid #254f41;
+    outline-offset: 2px;
+    background: #f0f8f3;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 1px solid #173d30;
+    background: #254f41;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .distribucion {
+        flex-direction: column;
+    }
+
+    nav, main {
+        width: 100%;
+    }
+
+    nav {
+        flex-basis: auto;
+    }
+
+    th, td {
+        padding: 0.35rem;
+    }
+}
+
+.video-cuenca iframe {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}

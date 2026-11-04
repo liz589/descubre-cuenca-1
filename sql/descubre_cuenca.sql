@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS `descubre_cuenca`
+    DEFAULT CHARACTER SET utf8mb4
+    DEFAULT COLLATE utf8mb4_unicode_ci;
+
+USE `descubre_cuenca`;
+
+CREATE TABLE IF NOT EXISTS `mensajes` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `nombre` VARCHAR(100) NOT NULL,
+    `correo` VARCHAR(150) NOT NULL,
+    `asunto` VARCHAR(150) NOT NULL,
+    `mensaje` TEXT NOT NULL,
+    `fecha_registro` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
